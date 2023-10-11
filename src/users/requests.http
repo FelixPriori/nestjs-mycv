@@ -7,6 +7,8 @@ content-type: application/json
   "password": "password"
 } 
 
+### Find all users
+GET http://localhost:3000/auth/
 
 ### Find a particular user with a given ID
 GET http://localhost:3000/auth/1
