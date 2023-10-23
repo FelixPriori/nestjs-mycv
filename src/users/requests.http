@@ -3,9 +3,24 @@ POST http://localhost:3000/auth/signup
 content-type: application/json
 
 {
-  "email": "asdf@asdf.com",
+  "email": "helloworld@asdf.com",
+  "password": "password"
+}
+
+### Sign in user
+POST http://localhost:3000/auth/signin
+content-type: application/json
+
+{
+  "email": "uniqueemail@asdf.com",
   "password": "password"
 } 
+
+### Sign out user
+POST http://localhost:3000/auth/signout
+
+### Get the currently signed in user
+GET http://localhost:3000/auth/whoami
 
 ### Find all users
 GET http://localhost:3000/auth/
@@ -25,5 +40,4 @@ content-type: application/json
 
 {
   "email": "asdf@asdfasdf.com"
-} 
-
+}
